@@ -1,0 +1,591 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+	<!--begin::Head-->
+	<head>
+        <base href="">
+		<meta charset="utf-8" />
+		<title>hogoo153구인구직</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!--begin::Fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro:wght@100;400&family=Poppins:wght@300;400;500&display=swap" />
+
+		<link rel='stylesheet' href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css'>		
+		<!--end::Fonts-->
+		<!--begin::Page Vendors Styles(used by this page)-->
+		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Page Vendors Styles-->
+		<!--begin::Global Theme Styles(used by all pages)-->
+		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Global Theme Styles-->
+		<!--begin::Layout Themes(used by all pages)-->
+		<!--end::Layout Themes-->
+		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+	</head>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body id="kt_body" class="header-fixed header-mobile-fixed page-loading" data-bs-spy="scroll" data-bs-target="#list-resume">
+		<!--begin::Main-->
+		<!--begin::Header Mobile-->
+		<script type="text/javascript" src="mTop.js"></script>
+		<!--end::Header Mobile-->
+		<div class="d-flex flex-column flex-root">
+			<!--begin::Page-->
+			<div class="d-flex flex-row flex-column-fluid page">
+				<!--begin::Wrapper-->
+				<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+					<div id="kt_header" class="header flex-column">
+						<!--begin::Top-->
+						<div class="header-top">
+						<!--begin::Container-->
+							<div class="container">
+								<script type="text/javascript" src="headerTop.js"></script>
+							</div>
+						<!--end::Container-->
+						</div>
+						<!--end::Top-->
+					</div>
+					<!--begin::Content-->
+					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+						<!--begin::Entry-->
+						<div class="d-flex flex-column-fluid" >
+							<!--begin::Container-->
+							<div class="container">
+								<!--begin::Dashboard-->
+								<div class="row">									
+									<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example col-xl-10">
+										<!--begin::Form-->
+										<form class="form">
+											<!--begin::기본정보-->
+											<div  id="list-item-1" class="card-title align-items-start flex-column">
+												<h3 class="card-label font-weight-bolder text-dark">기본정보</h3>											
+											</div>
+											<!--begin::기본정보Body-->
+											<div class="card card-custom gutter-b">
+												<div class="card-body">
+													<div class="row">
+														<div class="col-lg-6 col-xl-9">	
+															<div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">이름<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-6 col-xl-6">
+																	<input class="form-control form-control-lg form-control-solid" type="text" placeholder="이름입력" />
+																</div>
+																<div class="col-lg-3 col-xl-3">
+																	<select class="form-control form-control-lg form-control-solid">
+																		<option>구직상태선택</option>
+																		<option>구직준비중</option>
+																		<option>구직중</option>
+																		<option>재직중</option>
+																	</select>
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">생년월일<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-6 col-xl-6">
+																	<input type="text" class="form-control" id="kt_datepicker_1" readonly="readonly"  placeholder="YYYYMMDD" />
+																</div>
+																<div class="col-lg-3 col-xl-3">
+																	<div class="inpRdoSw sizeXL resume_right focus">
+																		<span class="inOption">
+																			<input name="sex" id="male" type="radio" value="male" checked>
+																			<label for="male" class="lbl">남</label>
+																		</span>
+																		<span class="inOption">
+																			<input name="sex" id="female" type="radio" value="female">
+																			<label for="female" class="lbl">여</label>
+																		</span>
+																		<p class="txt_error"></p>
+																	</div>
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">이메일<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-9 col-xl-6">
+																	<input class="form-control form-control-lg form-control-solid" type="text" placeholder="이메일주소입력" />
+																	<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">휴대폰<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-9 col-xl-6">
+																	<input class="form-control form-control-lg form-control-solid"  type="text" placeholder="-빼고입력" />
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">주소<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-9 col-xl-6">
+																	<input class="form-control form-control-lg form-control-solid"  type="text" placeholder="주소입력" />
+																</div>
+															</div>
+
+														</div>
+														<div class="col-lg-3 col-xl-3">
+														<!--begin::사진등록--> 
+															<div class="image-input image-input-outline" id="kt_profile_avatar" style="background-image: url(assets/media/users/blank.png)">
+																<div class="image-input-wrapper" style="background-image: url(assets/media/users/blank.png)"></div>
+																<label class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="change" data-toggle="tooltip" title="" data-original-title="사진추가">
+																	<i class="fa fa-pen icon-sm text-muted"></i>
+																	<input type="file" name="profile_avatar" accept=".png, .jpg, .jpeg" />
+																	<input type="hidden" name="profile_avatar_remove" />
+																</label>
+																<span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="cancel" data-toggle="tooltip" title="등록취소">
+																	<i class="ki ki-bold-close icon-xs text-muted"></i>
+																</span>
+																<span class="btn btn-xs btn-icon btn-circle btn-white btn-hover-text-primary btn-shadow" data-action="remove" data-toggle="tooltip" title="사진삭제">
+																	<i class="ki ki-bold-close icon-xs text-muted"></i>
+																</span>
+															</div>
+														<!--end::사진등록--> 
+														</div>	
+													</div>														
+												</div>
+											</div>	
+											<!--end::기본정보Body-->
+											<!--end::기본정보-->
+										
+										
+											<!--begin::학력정보-->
+											<div  id="list-item-2" class="card-title align-items-start flex-column">
+												<h3 class="card-label font-weight-bolder text-dark">학력정보</h3>	
+												<span>먼저 최종학력 선택 후 학력사항을 입력하세요</span>										
+											</div>
+											<!--begin::학력정보Body-->
+											<div class="card card-custom gutter-b">
+												<!--Begin::Header-->
+												<div class="card-header card-header-tabs-line">
+													<div class="card-toolbar">
+														<ul class="nav nav-tabs nav-pills nav-tabs-bold nav-tabs-line-3x" role="tablist">
+															<li class="nav-item mr-3">
+																<a class="nav-link" data-toggle="tab" href="#kt_apps_contacts_view_tab_2">
+																	<span class="nav-text font-weight-bold">초등학교졸업</span>
+																</a>
+															</li>
+															<li class="nav-item mr-3">
+																<a class="nav-link" data-toggle="tab" href="#kt_apps_contacts_view_tab_3">
+																	<span class="nav-text font-weight-bold">중학교졸업</span>
+																</a>
+															</li>
+															<li class="nav-item mr-3">
+																<a class="nav-link" data-toggle="tab" href="#kt_apps_contacts_view_tab_4">
+																	<span class="nav-text font-weight-bold">고등학교졸업</span>
+																</a>
+															</li>
+															<li class="nav-item">
+																<a class="nav-link" data-toggle="tab" href="#kt_apps_contacts_view_tab_5">
+																	<span class="nav-text font-weight-bold">대학교이상졸업</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<!--end::Header-->
+												<!--Begin::Body-->
+												
+												<div class="tab-content">
+													<!--begin::Tab Content-->
+													<div class="tab-pane" id="kt_apps_contacts_view_tab_2" role="tabpanel">
+														<div class="card-body p-15">
+														    <!--begin::초등학교-->
+                                                            <h4 class="gutter-b">경력사항 정보입력</h4>
+                                                            <div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">학교명<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-9 col-xl-6">
+																	<input class="form-control form-control-lg form-control-solid" type="text" placeholder="초등학교명 입력" />
+																	<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">지역<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-9 col-xl-6">
+																	<select class="form-control form-control-lg form-control-solid">
+																		<option>지역선택</option>
+																		<option>서울</option>
+																		<option>경기</option>
+																		<option>강원</option>
+																	</select>
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">재학기간<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-9 col-xl-6">
+                                                                    <span class="w-150px d-block float-left mr-1"><input type='text' class="form-control" id="datepicker" readonly placeholder="입학일자" type="text"/></span> 
+                                                                    <span class="d-block float-left mr-1 mt-2">~</span>
+                                                                    <span class="w-150px d-block float-left"><input type='text' class="form-control" id="datepicker2" readonly placeholder="졸업일자" type="text"/></span>
+                                                                
+																</div>
+															</div>
+                                                            <!--end::초등학교-->
+														</div>
+													</div>
+													<!--end::Tab Content-->
+													<div class="tab-pane" id="kt_apps_contacts_view_tab_3" role="tabpanel">
+														<div class="card-body p-15">
+														    <!--begin::중학교-->
+                                                            <h4 class="gutter-b">중학교 졸업 정보입력</h4>
+                                                            <div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">학교명<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-9 col-xl-6">
+																	<input class="form-control form-control-lg form-control-solid" type="text" placeholder="중학교명 입력" />
+																	<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">지역<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-9 col-xl-6">
+																	<select class="form-control form-control-lg form-control-solid">
+																		<option>지역선택</option>
+																		<option>서울</option>
+																		<option>경기</option>
+																		<option>강원</option>
+																	</select>
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">재학기간<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																
+                                                                <div class="col-lg-9 col-xl-6">
+                                                                    <span class="w-150px d-block float-left mr-1"><input type='text' class="form-control" id="datepicker" readonly placeholder="입학일자" type="text"/></span> 
+                                                                    <span class="d-block float-left mr-1 mt-2">~</span>
+                                                                    <span class="w-150px d-block float-left"><input type='text' class="form-control" id="datepicker2" readonly placeholder="졸업일자" type="text"/></span>
+                                                                </div>
+                                                                
+															</div>
+                                                            <!--end::중학교-->
+														</div>
+													</div>
+													<!--end::Tab Content-->
+													<div class="tab-pane" id="kt_apps_contacts_view_tab_4" role="tabpanel">
+														<div class="card-body p-15">
+														    <!--begin::고등학교-->
+                                                            <h4 class="gutter-b">고등학교 졸업 정보입력</h4>
+                                                            <div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">학교명<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-9 col-xl-6">
+																	<input class="form-control form-control-lg form-control-solid" type="text" placeholder="중학교명 입력" />
+																	<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">지역<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-9 col-xl-6">
+																	<select class="form-control form-control-lg form-control-solid">
+																		<option>지역선택</option>
+																		<option>서울</option>
+																		<option>경기</option>
+																		<option>강원</option>
+																	</select>
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">재학기간<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																
+                                                                <div class="col-lg-9 col-xl-6">
+                                                                    <span class="w-150px d-block float-left mr-1"><input type='text' class="form-control" id="datepicker" readonly placeholder="입학일자" type="text"/></span> 
+                                                                    <span class="d-block float-left mr-1 mt-2">~</span>
+                                                                    <span class="w-150px d-block float-left"><input type='text' class="form-control" id="datepicker2" readonly placeholder="졸업일자" type="text"/></span>
+                                                                </div>
+                                                                
+															</div>
+                                                            <!--end::고등학교-->
+														</div>
+													</div>
+													<div class="tab-pane" id="kt_apps_contacts_view_tab_5" role="tabpanel">
+														<div class="card-body p-15">
+															<!--begin::대학교-->
+                                                            <h4 class="gutter-b">대학교 졸업 정보입력</h4>
+                                                            <div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">대학<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-9 col-xl-6">
+																	<input class="form-control form-control-lg form-control-solid" type="text" placeholder="중학교명 입력" />
+																	<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+																</div>
+															</div>
+                                                            <div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">학교명<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-9 col-xl-6">
+																	<input class="form-control form-control-lg form-control-solid" type="text" placeholder="중학교명 입력" />
+																	<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">지역<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																<div class="col-lg-9 col-xl-6">
+																	<select class="form-control form-control-lg form-control-solid">
+																		<option>지역선택</option>
+																		<option>서울</option>
+																		<option>경기</option>
+																		<option>강원</option>
+																	</select>
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-xl-3 col-lg-3 col-form-label">재학기간<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																
+                                                                <div class="col-lg-9 col-xl-6">
+                                                                    <span class="w-150px d-block float-left mr-1"><input type='text' class="form-control" id="datepicker" readonly placeholder="입학일자" type="text"/></span> 
+                                                                    <span class="d-block float-left mr-1 mt-2">~</span>
+                                                                    <span class="w-150px d-block float-left"><input type='text' class="form-control" id="datepicker2" readonly placeholder="졸업일자" type="text"/></span>
+                                                                </div>
+                                                                
+															</div>
+                                                            <!--end::고등학교-->
+														</div>
+													</div>
+												</div>
+												
+											</div>
+											<!--end::학력정보Body-->
+											<!--end::학력정보-->
+										
+									
+										
+										<div  id="list-item-3" class="card-title align-items-start flex-column">
+											<h3 class="card-label font-weight-bolder text-dark">경력사항</h3>	
+											<span>경력사항을 입력하세요</span>										
+										</div>
+										<!--begin::경력정보Body-->
+										<div class="card card-custom gutter-b">
+											<!--Begin::Header-->
+											<div class="card-header card-header-tabs-line">
+												<div class="card-toolbar">
+													<ul class="nav nav-tabs nav-pills nav-tabs-bold nav-tabs-line-3x" role="tablist">
+														<li class="nav-item mr-3">
+															<a class="nav-link active show" data-toggle="tab" href="#kt_apps_career_view_tab_2">
+																<span class="nav-text font-weight-bold">경력</span>
+															</a>
+														</li>
+														<li class="nav-item mr-3">
+															<a class="nav-link" data-toggle="tab" href="#kt_apps_career_view_tab_3">
+																<span class="nav-text font-weight-bold">신입</span>
+															</a>
+														</li>														
+													</ul>
+												</div>
+											</div>
+											<!--end::Header-->
+											<!--Begin::Body-->
+											
+											<div class="tab-content">
+												<!--begin::Tab Content-->
+												<div class="tab-pane active" id="kt_apps_career_view_tab_2" role="tabpanel">
+													<div class="card-body p-15">
+														<!--begin::초등학교-->
+														<h4 class="gutter-b">경력사항 정보입력</h4>
+														<div class="form-group row">
+															<label class="col-xl-3 col-lg-3 col-form-label">회사명<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+															<div class="col-lg-9 col-xl-6">
+																<input class="form-control form-control-lg form-control-solid" type="text" placeholder="초등학교명 입력" />
+																<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+															</div>
+														</div>
+														<div class="form-group row">
+															<label class="col-xl-3 col-lg-3 col-form-label">퇴사사유선택<span class="ml-3 font-size-xs mt-1 text-danger"></span></label>
+															<div class="col-lg-9 col-xl-6">
+																<select class="form-control form-control-lg form-control-solid">
+																	<option>퇴사사유선택</option>
+																	<option>업직종전환</option>
+																	<option>근무조건</option>
+																	<option>경영악화</option>
+																</select>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label class="col-xl-3 col-lg-3 col-form-label">재직기간<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+															<div class="col-lg-9 col-xl-6">
+																<span class="w-150px d-block float-left mr-1"><input type='text' class="form-control" id="datepicker" readonly placeholder="입학일자" type="text"/></span> 
+																<span class="d-block float-left mr-1 mt-2">~</span>
+																<span class="w-150px d-block float-left"><input type='text' class="form-control" id="datepicker2" readonly placeholder="졸업일자" type="text"/></span>
+															
+															</div>
+														</div>													
+														
+														<div class="form-group row">
+															<label class="col-xl-3 col-lg-3 col-form-label">직급/직책<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+															<div class="col-lg-9 col-xl-6">
+																<input class="form-control form-control-lg form-control-solid w-50 d-inline-block mr-1 float-left" type="text" placeholder="직급직책 입력" />
+																<input class="form-control form-control-lg form-control-solid w-30" type="text" placeholder="년차입력" />
+																<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+															</div>
+														</div>
+														<div class="form-group row">
+															<label class="col-xl-3 col-lg-3 col-form-label">직종<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+															<div class="col-lg-9 col-xl-6">
+																<input class="form-control form-control-lg form-control-solid" type="text" placeholder="직종선택" />
+																<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+															</div>
+														</div>
+														<div class="form-group row">
+															<label class="col-xl-3 col-lg-3 col-form-label">근무지역<span class="ml-3 font-size-xs mt-1 text-danger"></span></label>
+															<div class="col-lg-9 col-xl-6">
+																<select class="form-control form-control-lg form-control-solid">
+																	<option>지역선택</option>
+																	<option>서울</option>
+																	<option>경기</option>
+																	<option>강원</option>
+																</select>
+															</div>
+														</div>
+														<div class="form-group row">
+															<label class="col-xl-3 col-lg-3 col-form-label">재학기간<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+															
+															<div class="col-lg-9 col-xl-6">
+																<span class="w-150px d-block float-left mr-1"><input type='text' class="form-control" id="datepicker" readonly placeholder="입학일자" type="text"/></span> 
+																<span class="d-block float-left mr-1 mt-2">~</span>
+																<span class="w-150px d-block float-left"><input type='text' class="form-control" id="datepicker2" readonly placeholder="졸업일자" type="text"/></span>
+															</div>
+															
+														</div>
+														<!--end::중학교-->
+													</div>
+												</div>
+												<!--end::Tab Content-->
+												<div class="tab-pane" id="kt_apps_career_view_tab_3" role="tabpanel">
+													<div class="card-body p-0"></div>
+												</div>
+											</div>
+											<button id="list-item-3-1" class="btn btn-primary font-weight-bolder btn-lg mb-1">프로젝트수행이력 추가</button>
+											<button id="list-item-3-2" class="btn btn-primary font-weight-bolder btn-lg mb-1">대외활동 추가</button>
+											<button id="list-item-3-3" class="btn btn-primary font-weight-bolder btn-lg mb-1">자격증/어학/수상내역 추가</button>
+											<button id="list-item-3-4" class="btn btn-primary font-weight-bolder btn-lg mb-1">보유기술및능력 추가</button>
+											<button id="list-item-3-5" class="btn btn-primary font-weight-bolder btn-lg mb-1">취업우대사항 추가</button>
+											<button id="list-item-3-6" class="btn btn-primary font-weight-bolder btn-lg mb-1">포트폴리오및기타문서 추가</button>
+										</div>
+										<!--end::경력정보Body-->
+										<h4 id="list-item-4">대외활동 추가</h4>
+										
+										<h5 id="list-item-4-1" class="gutter-b">경력사항 정보입력</h5>
+										<div class="card-body p-15">
+											<!--begin::초등학교-->
+											<div class="form-group row">
+												<label class="col-xl-3 col-lg-3 col-form-label">회사명<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+												<div class="col-lg-9 col-xl-6">
+													<input class="form-control form-control-lg form-control-solid" type="text" placeholder="초등학교명 입력" />
+													<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-xl-3 col-lg-3 col-form-label">퇴사사유선택<span class="ml-3 font-size-xs mt-1 text-danger"></span></label>
+												<div class="col-lg-9 col-xl-6">
+													<select class="form-control form-control-lg form-control-solid">
+														<option>퇴사사유선택</option>
+														<option>업직종전환</option>
+														<option>근무조건</option>
+														<option>경영악화</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-xl-3 col-lg-3 col-form-label">재직기간<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+												<div class="col-lg-9 col-xl-6">
+													<span class="w-150px d-block float-left mr-1"><input type='text' class="form-control" id="datepicker" readonly placeholder="입학일자" type="text"/></span> 
+													<span class="d-block float-left mr-1 mt-2">~</span>
+													<span class="w-150px d-block float-left"><input type='text' class="form-control" id="datepicker2" readonly placeholder="졸업일자" type="text"/></span>
+												
+												</div>
+											</div>													
+											
+											<div class="form-group row">
+												<label class="col-xl-3 col-lg-3 col-form-label">직급/직책<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+												<div class="col-lg-9 col-xl-6">
+													<input class="form-control form-control-lg form-control-solid w-50 d-inline-block mr-1 float-left" type="text" placeholder="직급직책 입력" />
+													<input class="form-control form-control-lg form-control-solid w-30" type="text" placeholder="년차입력" />
+													<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-xl-3 col-lg-3 col-form-label">직종<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+												<div class="col-lg-9 col-xl-6">
+													<input class="form-control form-control-lg form-control-solid" type="text" placeholder="직종선택" />
+													<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-xl-3 col-lg-3 col-form-label">근무지역<span class="ml-3 font-size-xs mt-1 text-danger"></span></label>
+												<div class="col-lg-9 col-xl-6">
+													<select class="form-control form-control-lg form-control-solid">
+														<option>지역선택</option>
+														<option>서울</option>
+														<option>경기</option>
+														<option>강원</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-xl-3 col-lg-3 col-form-label">재학기간<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+												
+												<div class="col-lg-9 col-xl-6">
+													<span class="w-150px d-block float-left mr-1"><input type='text' class="form-control" id="datepicker" readonly placeholder="입학일자" type="text"/></span> 
+													<span class="d-block float-left mr-1 mt-2">~</span>
+													<span class="w-150px d-block float-left"><input type='text' class="form-control" id="datepicker2" readonly placeholder="졸업일자" type="text"/></span>
+												</div>
+												
+											</div>
+											<!--end::중학교-->
+										</div>
+										<h5 id="list-item-4-2">Item 4-2</h5>
+										<p>Item 1Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore. Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit dolore.	Item 1-1Amet tempor mollit aliquip pariatur excepteur commodo do ea cillum commodo Lorem et occaecat elit qui et. Aliquip labore ex ex esse voluptate occaecat Lorem ullamco deserunt. Aliqua cillum excepteur irure consequat id quis ea. Sit proident ullamco aute magna pariatur nostrud labore. Reprehenderit aliqua commodo eiusmod aliquip est do duis amet proident magna consectetur consequat eu commodo fugiat non quis. Enim aliquip exercitation ullamco adipisicing voluptate excepteur minim exercitation minim minim commodo adipisicing exercitation officia nisi adipisicing. Anim id duis qui consequat labore adipisicing sint dolor elit cillum anim et fugiat.Item 2-2Cillum nisi deserunt magna eiusmod qui eiusmod velit voluptate pariatur laborum sunt enim. Irure laboris mollit consequat incididunt sint et culpa culpa incididunt adipisicing magna magna occaecat. Nulla ipsum cillum eiusmod sint elit excepteur ea labore enim consectetur in labore anim. Proident ullamco ipsum esse elit ut Lorem eiusmod dolor et eiusmod. Anim occaecat nulla in non consequat eiusmod velit incididunt.Item 2Quis magna Lorem anim amet ipsum do mollit sit cillum voluptate ex nulla tempor. Laborum consequat non elit enim exercitation cillum aliqua consequat id aliqua. Esse ex consectetur mollit voluptate est in duis laboris ad sit ipsum anim Lorem. Incididunt veniam velit elit elit veniam Lorem aliqua quis ullamco deserunt sit enim elit aliqua esse irure. Laborum nisi sit est tempor laborum mollit labore officia laborum excepteur commodo non commodo dolor excepteur commodo. Ipsum fugiat ex est consectetur ipsum commodo tempor sunt in proident.Item 3Quis anim sit do amet fugiat dolor velit sit ea ea do reprehenderit culpa duis. Nostrud aliqua ipsum fugiat minim proident occaecat excepteur aliquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.Item 3-1Deserunt quis elit Lorem eiusmod amet enim enim amet minim Lorem proident nostrud. Ea id dolore anim exercitation aute fugiat labore voluptate cillum do laboris labore. Ex velit exercitation nisi enim labore reprehenderit labore nostrud ut ut. Esse officia sunt duis aliquip ullamco tempor eiusmod deserunt irure nostrud irure. Ullamco proident veniam laboris ea consectetur magna sunt ex exercitation aliquip minim enim culpa occaecat exercitation. Est tempor excepteur aliquip laborum consequat do deserunt laborum esse eiusmod irure proident ipsum esse qui.Item 3-2Labore sit culpa commodo elit adipisicing sit aliquip elit proident voluptate minim mollit nostrud aute reprehenderit do. Mollit excepteur eu Lorem ipsum anim commodo sint labore Lorem in exercitation velit incididunt. Occaecat consectetur nisi in occaecat proident minim enim sunt reprehenderit exercitation cupidatat et do officia. Aliquip consequat ad labore labore mollit ut amet. Sit pariatur tempor proident in veniam culpa aliqua excepteur elit magna fugiat eiusmod amet officia.</p>
+									<!--begin::Wizard Actions-->
+									<div class="d-flex justify-content-center border-top mt-5 pt-10">
+																
+										<div>
+											
+											<button type="button" class="btn btn-primary font-weight-bolder btn-lg" data-wizard-type="action-next">이력서 작성 완료</button>
+										</div>
+									</div>
+									<!--end::Wizard Actions-->
+									</form>
+
+									</div>
+									<div id="list-resume" class="list-group col-xl-2">
+										<h3 class="font-weight-bolder ml-5">HOGOO 이력서 작성</h3>
+										<a class="list-group-item list-group-item-action active" href="#list-item-1">기본정보<span class="ml-3 font-size-xs mt-1 text-light-primary">필수</span></a>										
+										<a class="list-group-item list-group-item-action" href="#list-item-2">학력사항<span class="ml-3 font-size-xs mt-1 text-light-gray">필수</span></a>
+										<a class="list-group-item list-group-item-action" href="#list-item-3">경력사항<span class="ml-3 font-size-xs mt-1 text-light-gray">필수</span></a>
+										<nav class="nav nav-pills flex-column">
+											<a class="nav-link ml-3 my-1" href="#list-item-3-1">프로젝트수행이력</a>
+											<a class="nav-link ml-3 my-1" href="#list-item-3-2">대외활동</a>
+                                            <a class="nav-link ml-3 my-1" href="#list-item-3-3">자격증/어학/수상내역</a>
+                                            <a class="nav-link ml-3 my-1" href="#list-item-3-4">보유기술 및 능력</a>
+											<a class="nav-link ml-3 my-1" href="#list-item-3-5">취업 우대사항</a>
+											<a class="nav-link ml-3 my-1" href="#list-item-3-6">포트폴리오 및 기타문서</a>
+										  </nav>
+										<a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+										<nav class="nav nav-pills flex-column">
+											<a class="nav-link ml-3 my-1" href="#list-item-4-1">Item 4-1</a>
+											<a class="nav-link ml-3 my-1" href="#list-item-4-2">Item 4-2</a>
+										  </nav>
+									  </div>
+								</div>
+								<!--end::Dashboard-->
+							</div>
+							<!--end::Container-->
+						</div>
+						<!--end::Entry-->
+					</div>
+					<!--end::Content-->
+					<script type="text/javascript" src="footer.js"></script>
+				</div>
+				<!--end::Wrapper-->
+			</div>
+			<!--end::Page-->
+		</div>
+		<!--end::Main-->
+		<script type="text/javascript" src="others.js"></script>
+        <script>
+			//scrollspy
+			$('[data-spy="scroll"]').each(function () {
+				var $spy = $(this).scrollspy('refresh')
+			})
+            $("#datepicker,#datepicker2").datepicker( {
+                format: "mm-yyyy",
+                startView: "months", 
+                minViewMode: "months"
+            });
+		</script>
+			<script src="assets/js/pages/crud/forms/widgets/bootstrap-datepicker.js"></script>
+            <script src="assets/js/pages/crud/forms/widgets/bootstrap-daterangepicker.js"></script>
+	</body>
+	<!--end::Body-->
+</html>

@@ -1,0 +1,20 @@
+document.write('<base href="">);
+document.write('<meta charset="utf-8" />);
+document.write('<title>hogoo153구인구직</title>);
+document.write('<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />);
+document.write('<!--begin::Fonts-->);
+document.write('<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro:wght@100;400&family=Poppins:wght@300;400;500&display=swap" />);
+
+document.write('<link rel="stylesheet" href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css">);		
+document.write('<!--end::Fonts-->);
+document.write('<!--begin::Page Vendors Styles(used by this page)-->);
+document.write('<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />);
+document.write('<!--end::Page Vendors Styles-->);
+document.write('<!--begin::Global Theme Styles(used by all pages)-->);
+document.write('<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />);
+document.write('<link href="assets/plugins/custom/prismjs/prismjs.bundle.css" rel="stylesheet" type="text/css" />);
+document.write('<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />);
+document.write('<!--end::Global Theme Styles-->);
+document.write('<!--begin::Layout Themes(used by all pages)-->);
+document.write('<!--end::Layout Themes-->);
+document.write('<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />);

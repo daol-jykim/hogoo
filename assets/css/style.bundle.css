@@ -83538,7 +83538,7 @@ body {
     box-shadow: none;
   }
   .header-mobile a > img{display:none}
-  .header-mobile a {background: url(/dist/assets/media/logos/logo-light.png)no-repeat 30px center;width:200px;height:35px;cursor:pointer;}
+  .header-mobile a {background: url(/assets/media/logos/logo-light.png)no-repeat 30px center;width:200px;height:35px;cursor:pointer;}
   .header-mobile .burger-icon span {
     background-color: rgba(255, 255, 255, 0.75);
   }
@@ -87592,12 +87592,12 @@ body {
 .social_login:after {display:block;clear:both;content:""}
 .social_login li {display:block;float:none;zoom:1;position:relative;margin-bottom:6px;width:100%;height:38px;box-sizing:border-box;background-color:#fff}
 .social_login a {display:block;zoom:1;padding-left:80px;height:38px;border:1px solid #ddd;box-sizing:border-box;color:#666;font-size:12px;letter-spacing:-1px;line-height:34px;text-decoration:none}
-.social_login .sl_naver {background:url(/dist/assets/media/logos/icon_sns_naver_m.png) 50px 12px no-repeat}
-.social_login .sl_facebook {background:url(/dist/assets/media/logos/icon_sns_facebook_m.png) 52px 9px no-repeat}
-.social_login .sl_kakao {background:url(/dist/assets/media/logos/icon_sns_kakao_m.png) 47px 9px no-repeat}
-.social_login .sl_google {background:url(/dist/assets/media/logos/icon_sns_google_m.png) 48px 9px no-repeat}
-.social_login .sl_apple {background:url(/dist/assets/media/logos/icon_sns_apple_m.png) 49px 7px no-repeat}
-.social_login .sl_phone {background:url(/dist/assets/media/logos/icon_sns_phone_m.png) 49px 8px no-repeat} 
+.social_login .sl_naver {background:url(/assets/media/logos/icon_sns_naver_m.png) 50px 12px no-repeat}
+.social_login .sl_facebook {background:url(/assets/media/logos/icon_sns_facebook_m.png) 52px 9px no-repeat}
+.social_login .sl_kakao {background:url(/assets/media/logos/icon_sns_kakao_m.png) 47px 9px no-repeat}
+.social_login .sl_google {background:url(/assets/media/logos/icon_sns_google_m.png) 48px 9px no-repeat}
+.social_login .sl_apple {background:url(/assets/media/logos/icon_sns_apple_m.png) 49px 7px no-repeat}
+.social_login .sl_phone {background:url(/assets/media/logos/icon_sns_phone_m.png) 49px 8px no-repeat} 
 @media (max-width: 1021.98px){
   #list-resume{display:none}
 .scrollspy-example.col-xl-10{-webkit-box-flex: 0;

@@ -87598,13 +87598,15 @@ body {
 .social_login .sl_kakao {background:url(/assets/media/logos/icon_sns_kakao_m.png) 47px 9px no-repeat}
 .social_login .sl_google {background:url(/assets/media/logos/icon_sns_google_m.png) 48px 9px no-repeat}
 .social_login .sl_apple {background:url(/assets/media/logos/icon_sns_apple_m.png) 49px 7px no-repeat}
-.social_login .sl_phone {background:url(/assets/media/logos/icon_sns_phone_m.png) 49px 8px no-repeat} 
+.social_login .sl_phone {background:url(/assets/media/logos/join_phone.gif) no-repeat 35px 25px;line-height:80px;font-size:15px;font-weight:bold;border-color:#666} 
+.social_login .sl_ipin {background:url(/assets/media/logos/join_ipin.gif) no-repeat  35px 25px;line-height:80px;font-size:15px;font-weight:bold;border-color:#666} 
 @media (max-width: 1021.98px){
   #list-resume{display:none}
 .scrollspy-example.col-xl-10{-webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;}
+    .social_login li{width:50% !important}
 }
 .inpRdoSw {display:inline-block;vertical-align:middle}
 .inpRdoSw:after {display:table;clear:both;content:"";table-layout:fixed}

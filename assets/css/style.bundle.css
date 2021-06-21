@@ -87549,6 +87549,7 @@ body {
 @media (max-width: 1021.98px) {
   .content {
     padding: 15px 0;
+    width:100%;
   }
   .subheader-enabled.subheader-transparent .content {
     padding-top: 0;

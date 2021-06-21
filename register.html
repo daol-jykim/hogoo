@@ -126,7 +126,7 @@
 												<div class="tab-content m-0 p-0">
 													<div class="tab-pane active" id="tab_forms_widget_1" role="tabpanel" aria-labelledby="tab_forms_widget_1">
 														<!--start::forms_widget_tab_1-->
-														<form class="form" id="kt_form">
+														<form class="form" id="form_1">
 															<!--begin::Wizard Step 1-->
 															<div class="pb-5" data-wizard-type="step-content" data-wizard-state="current">
 																<h3 class="mb-10 font-weight-bold text-dark">소셜로 간편하게 로그인하세요</h3>
@@ -535,6 +535,419 @@
 														<!--end::forms_widget_tab_1-->
 													</div>
 													<div class="tab-pane" id="tab_forms_widget_2" role="tabpanel" aria-labelledby="tab_forms_widget_2">
+														<form class="form" id="form_2">
+															<!--begin::Wizard Step 1-->
+															<div class="pb-5" data-wizard-type="step-content" data-wizard-state="current">																
+																<!--begin::Input-->
+																<div class="form-group">
+																	<label>이름</label>
+																	<input type="text" class="form-control form-control-solid form-control-lg" name="address1" placeholder="Address Line 1" value="아이디를 입력하세요" />
+																	<span class="form-text text-muted"></span>
+																</div>
+																<!--end::Input-->
+																<!--begin::Input-->
+																<div class="form-group">
+																	<label>외국인등록번호</label>
+																	<div class="d-flex justify-content-between align-items-center">
+																		<input type="text" class="form-control form-control-solid form-control-lg float-left mr-1" name="address1" placeholder="Address Line 1" value="아이디를 입력하세요" />
+																		<span class="form-text text-muted"></span>
+																		<button class="btn btn-primary min-w-100px" type="submit">인증</button>
+																	</div>
+																</div>
+																<!--end::Input-->
+																<!--begin::Input-->
+																<div class="form-group">
+																	<label>아이디</label>
+																	<input type="text" class="form-control form-control-solid form-control-lg" name="address1" placeholder="Address Line 1" value="아이디를 입력하세요" />
+																	<span class="form-text text-muted">4~20자의 영문 숫자와 특수문자(...)만 사용가능.</span>
+																</div>
+																<!--end::Input-->
+																<!--begin::Input-->
+																<div class="form-group">
+																	<label>비밀번호</label>
+																	<input type="text" class="form-control form-control-solid form-control-lg" name="address2" placeholder="Address Line 2" value="비밀번호를 입력하세요" />
+																	<span class="form-text text-muted">8~16자리 영문 대소문자,숫자,특수문자 중 3가지 이상의 조합</span>
+																</div>
+																<div class="form-group">
+																	<div class="d-flex justify-content-between align-items-center">
+																		<ul class="social_login p-0 flex-sm-row" id="">
+																			<li class="float-left w-50 h-80px"><a href="#" data-provider="handphone" class="sl_phone mr-1 h-80px">핸드폰 인증</a></li>
+																			<li class="float-left w-50 h-80px"><a href="#" data-provider="ipin" class="sl_ipin mr-1 h-80px">아이핀 인증</a></li>
+																		</ul>
+																	</div>
+																</div>
+																<!--end::Input-->
+																<!--begin::인증 accodion-->
+																<div class="form-group d-none">
+																		<!--begin::인증-->
+																	<div class="form-group">
+																		<div class="card card-custom gutter-b">
+																			<!--Begin::Header-->
+																			<div class="card-header card-header-tabs-line">
+																			
+																					<ul class="nav nav-tabs nav-tabs-bold nav-tabs-line-3x flex-column flex-sm-row nav-justified w-100" role="tablist">
+																						<li class="nav-item">
+																							<a class="nav-link" data-toggle="tab" href="#kt_apps_career_view_tab_2">
+																								<span class="nav-text font-weight-bold">핸드폰인증</span>
+																							</a>
+																						</li>
+																						<li class="nav-item">
+																							<a class="nav-link" data-toggle="tab" href="#kt_apps_career_view_tab_3">
+																								<span class="nav-text font-weight-bold">이메일인증</span>
+																							</a>
+																						</li>														
+																					</ul>
+																			
+																			</div>
+																			<!--end::Header-->
+																			<!--Begin::Body-->
+																			
+																			<div class="tab-content">
+																				<!--begin::Tab Content-->
+																				<div class="tab-pane fade " id="kt_apps_career_view_tab_2" role="tabpanel">
+																					<div class="card-body p-15">
+																						<!--begin::초등학교-->
+																						<h4 class="gutter-b">핸드폰인증 정보입력</h4>
+																						<div class="form-group row">
+																							<label class="col-xl-3 col-lg-3 col-form-label">회사명<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																							<div class="col-lg-9 col-xl-6">
+																								<input class="form-control form-control-lg form-control-solid" type="text" placeholder="초등학교명 입력" />
+																								<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+																							</div>
+																						</div>
+																						
+																						<!--end::중학교-->
+																					</div>
+																				</div>
+																				<!--end::Tab Content-->
+																				<div class="tab-pane fade" id="kt_apps_career_view_tab_3" role="tabpanel">
+																					<div class="card-body p-15">
+																						<!--begin::초등학교-->
+																						<h4 class="gutter-b">이메일인증 정보입력</h4>
+																						<div class="form-group row">
+																							<label class="col-xl-3 col-lg-3 col-form-label">회사명<span class="ml-3 font-size-xs mt-1 text-danger">필수</span></label>
+																							<div class="col-lg-9 col-xl-6">
+																								<input class="form-control form-control-lg form-control-solid" type="text" placeholder="초등학교명 입력" />
+																								<!-- <span class="form-text text-muted">If you want your invoices addressed to a company. Leave blank to use your full name.</span> -->
+																							</div>
+																						</div>
+																						<!--end::중학교-->
+																					</div>
+																				</div>
+																			</div>
+																			<!-- <button id="list-item-3-1" class="btn btn-primary font-weight-bolder btn-lg mb-1">프로젝트수행이력 추가</button>
+																			<button id="list-item-3-2" class="btn btn-primary font-weight-bolder btn-lg mb-1">대외활동 추가</button>
+																			<button id="list-item-3-3" class="btn btn-primary font-weight-bolder btn-lg mb-1">자격증/어학/수상내역 추가</button>
+																			<button id="list-item-3-4" class="btn btn-primary font-weight-bolder btn-lg mb-1">보유기술및능력 추가</button>
+																			<button id="list-item-3-5" class="btn btn-primary font-weight-bolder btn-lg mb-1">취업우대사항 추가</button>
+																			<button id="list-item-3-6" class="btn btn-primary font-weight-bolder btn-lg mb-1">포트폴리오및기타문서 추가</button> -->
+																		</div>
+																	</div>
+																	<!--end::인증-->
+																</div>
+																<!--end::Input-->
+															</div>
+															<!--end::Wizard Step 1-->
+															<!--begin::Wizard Step 2-->
+															<div class="pb-5" data-wizard-type="step-content">
+																<h4 class="mb-10 font-weight-bold text-dark">Enter the Details of your Delivery</h4>
+																<!--begin::Input-->
+																<div class="form-group">
+																	<label>Package Details</label>
+																	<input type="text" class="form-control form-control-solid form-control-lg" name="package" placeholder="Package Details" value="Complete Workstation (Monitor, Computer, Keyboard &amp; Mouse)" />
+																	<span class="form-text text-muted">Please enter your Pakcage Details.</span>
+																</div>
+																<!--end::Input-->
+																<!--begin::Input-->
+																<div class="form-group">
+																	<label>Package Weight in KG</label>
+																	<input type="text" class="form-control form-control-solid form-control-lg" name="weight" placeholder="Package Weight" value="25" />
+																	<span class="form-text text-muted">Please enter your Package Weight in KG.</span>
+																</div>
+																<!--end::Input-->
+																<div class="row">
+																	<div class="col-xl-4">
+																		<!--begin::Input-->
+																		<div class="form-group">
+																			<label>Package Width in CM</label>
+																			<input type="text" class="form-control form-control-solid form-control-lg" name="width" placeholder="Package Width" value="110" />
+																			<span class="form-text text-muted">Please enter your Package Width in CM.</span>
+																		</div>
+																		<!--end::Input-->
+																	</div>
+																	<div class="col-xl-4">
+																		<!--begin::Input-->
+																		<div class="form-group">
+																			<label>Package Height in CM</label>
+																			<input type="text" class="form-control form-control-solid form-control-lg" name="height" placeholder="Package Height" value="90" />
+																			<span class="form-text text-muted">Please enter your Package Height in CM.</span>
+																		</div>
+																		<!--end::Input-->
+																	</div>
+																	<div class="col-xl-4">
+																		<!--begin::Input-->
+																		<div class="form-group">
+																			<label>Package Length in CM</label>
+																			<input type="text" class="form-control form-control-solid form-control-lg" name="packagelength" placeholder="Package Length" value="150" />
+																			<span class="form-text text-muted">Please enter your Package Length in CM.</span>
+																		</div>
+																		<!--end::Input-->
+																	</div>
+																</div>
+															</div>
+															<!--end::Wizard Step 2-->
+															<!--begin::Wizard Step 3-->
+															<div class="pb-5" data-wizard-type="step-content">
+																<h4 class="mb-10 font-weight-bold text-dark">Select your Services</h4>
+																<!--begin::Select-->
+																<div class="form-group">
+																	<label>Delivery Type</label>
+																	<select name="delivery" class="form-control form-control-solid form-control-lg">
+																		<option value="">Select a Service Type Option</option>
+																		<option value="overnight" selected="selected">Overnight Delivery (within 48 hours)</option>
+																		<option value="express">Express Delivery (within 5 working days)</option>
+																		<option value="basic">Basic Delivery (within 5 - 10 working days)</option>
+																	</select>
+																</div>
+																<!--end::Select-->
+																<!--begin::Select-->
+																<div class="form-group">
+																	<label>Packaging Type</label>
+																	<select name="packaging" class="form-control form-control-solid form-control-lg">
+																		<option value="">Select a Packaging Type Option</option>
+																		<option value="regular" selected="selected">Regular Packaging</option>
+																		<option value="oversized">Oversized Packaging</option>
+																		<option value="fragile">Fragile Packaging</option>
+																		<option value="frozen">Frozen Packaging</option>
+																	</select>
+																</div>
+																<!--end::Select-->
+																<!--begin::Select-->
+																<div class="form-group">
+																	<label>Preferred Delivery Window</label>
+																	<select name="preferreddelivery" class="form-control form-control-solid form-control-lg">
+																		<option value="">Select a Preferred Delivery Option</option>
+																		<option value="morning" selected="selected">Morning Delivery (8:00AM - 11:00AM)</option>
+																		<option value="afternoon">Afternoon Delivery (11:00AM - 3:00PM)</option>
+																		<option value="evening">Evening Delivery (3:00PM - 7:00PM)</option>
+																	</select>
+																</div>
+																<!--end::Select-->
+															</div>
+															<!--end::Wizard Step 3-->
+															<!--begin::Wizard Step 4-->
+															<div class="pb-5" data-wizard-type="step-content">
+																<h4 class="mb-10 font-weight-bold text-dark">Setup Your Delivery Location</h4>
+																<!--begin::Input-->
+																<div class="form-group">
+																	<label>Address Line 1</label>
+																	<input type="text" class="form-control form-control-solid form-control-lg" name="locaddress1" placeholder="Address Line 1" value="Address Line 1" />
+																	<span class="form-text text-muted">Please enter your Address.</span>
+																</div>
+																<!--end::Input-->
+																<!--begin::Input-->
+																<div class="form-group">
+																	<label>Address Line 2</label>
+																	<input type="text" class="form-control form-control-solid form-control-lg" name="locaddress2" placeholder="Address Line 2" value="Address Line 2" />
+																	<span class="form-text text-muted">Please enter your Address.</span>
+																</div>
+																<!--end::Input-->
+																<div class="row">
+																	<div class="col-xl-6">
+																		<!--begin::Input-->
+																		<div class="form-group">
+																			<label>Postcode</label>
+																			<input type="text" class="form-control form-control-solid form-control-lg" name="locpostcode" placeholder="Postcode" value="3072" />
+																			<span class="form-text text-muted">Please enter your Postcode.</span>
+																		</div>
+																		<!--end::Input-->
+																	</div>
+																	<div class="col-xl-6">
+																		<!--begin::Input-->
+																		<div class="form-group">
+																			<label>City</label>
+																			<input type="text" class="form-control form-control-solid form-control-lg" name="loccity" placeholder="City" value="Preston" />
+																			<span class="form-text text-muted">Please enter your City.</span>
+																		</div>
+																		<!--end::Input-->
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-xl-6">
+																		<!--begin::Input-->
+																		<div class="form-group">
+																			<label>State</label>
+																			<input type="text" class="form-control form-control-solid form-control-lg" name="locstate" placeholder="State" value="VIC" />
+																			<span class="form-text text-muted">Please enter your State.</span>
+																		</div>
+																		<!--end::Input-->
+																	</div>
+																	<div class="col-xl-6">
+																		<!--begin::Select-->
+																		<div class="form-group">
+																			<label>Country</label>																			
+																		</div>
+																		<!--end::Select-->
+																	</div>
+																</div>
+															</div>
+															<!--end::Wizard Step 4-->
+															<!--begin::Wizard Step 5-->
+															<div class="pb-5" data-wizard-type="step-content">
+																<!--begin::Section-->
+																<h4 class="mb-10 font-weight-bold text-dark">Review your Details and Submit</h4>
+																<h6 class="font-weight-bolder mb-3">Current Address:</h6>
+																<div class="text-dark-50 line-height-lg">
+																	<div>Address Line 1</div>
+																	<div>Address Line 2</div>
+																	<div>Melbourne 3000, VIC, Australia</div>
+																</div>
+																<div class="separator separator-dashed my-5"></div>
+																<!--end::Section-->
+																<!--begin::Section-->
+																<h6 class="font-weight-bolder mb-3">Delivery Details:</h6>
+																<div class="text-dark-50 line-height-lg">
+																	<div>Package: Complete Workstation (Monitor, Computer, Keyboard &amp; Mouse)</div>
+																	<div>Weight: 25kg</div>
+																	<div>Dimensions: 110cm (w) x 90cm (h) x 150cm (L)</div>
+																</div>
+																<div class="separator separator-dashed my-5"></div>
+																<!--end::Section-->
+																<!--begin::Section-->
+																<h6 class="font-weight-bolder mb-3">Delivery Service Type:</h6>
+																<div class="text-dark-50 line-height-lg">
+																	<div>Overnight Delivery with Regular Packaging</div>
+																	<div>Preferred Morning (8:00AM - 11:00AM) Delivery</div>
+																</div>
+																<div class="separator separator-dashed my-5"></div>
+																<!--end::Section-->
+																<!--begin::Section-->
+																<h6 class="font-weight-bolder mb-3">Delivery Address:</h6>
+																<div class="text-dark-50 line-height-lg">
+																	<div>Address Line 1</div>
+																	<div>Address Line 2</div>
+																	<div>Preston 3072, VIC, Australia</div>
+																</div>
+																<!--end::Section-->
+															</div>
+															<!--end::Wizard Step 5-->
+															<!--begin::Accordion-->
+															<div class="accordion accordion-toggle-arrow" id="accordionExample1">
+																<div class="card">
+																	<div class="card-header">
+																		<div class="d-flex p-4 bg-white align-items-center justify-content-between">
+																			<label class="checkbox">
+																				<input type="checkbox" checked="checked" name="Checkboxes3">
+																				<span class="mr-1"></span>전체동의</label>
+																		</div>
+																	</div>
+																</div>
+																<div class="card">
+																	<div class="card-header">
+																		<div class="card-title collapsed" data-toggle="collapse" data-target="#collapseTwo1">
+																			<label class="checkbox">
+																				<input type="checkbox"  name="Checkboxes4">
+																				<span class="mr-1"></span>서비스이용약관</label>
+																			</div>
+																	</div>
+																	<div id="collapseTwo1" class="collapse" data-parent="#accordionExample1">
+																		<div class="card-body">서비스이용약관<br/>
+																			서비스이용약관 취급하는 모든 개인정보는 관련 법령에 근거하여 수집 · 보유 및 처리되고 있습니다. 「개인정보보호법」은 이러한 개인정보의 취급에 대한 일반적 규범을 제시하고 있으며, 개인정보보호위원회는 이러한 법령의 규정에 따라 수집 · 보유 및 처리하는 개인정보를 공공업무의 적절한 수행과 이용자의 권익을 보호하기 위해 적법하고 적정하게 취급할 것입니다.<br/>
+																			또한, 개인정보보호위원회는 관련 법령에서 규정한 바에 따라 보유하고 있는 개인정보에 대한 열람, 정정·삭제, 처리정지 요구 등 이용자의 권익을 존중하며, 이용자는 이러한 법령상 권익의 침해 등에 대하여 행정심판법에서 정하는 바에 따라 행정심판을 청구할 수 있습니다.<br/>
+																			개인정보보호위원회는 개인정보보호법 제 30조에 따라 정보주체의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 개인정보 처리방침을 수립 · 공개하고 있습니다.</div>
+																	</div>
+																</div>
+																<div class="card">
+																	<div class="card-header">
+																		<div class="card-title collapsed" data-toggle="collapse" data-target="#collapseThree1">
+																			<label class="checkbox">
+																				<input type="checkbox"  name="Checkboxes5">
+																				<span class="mr-1"></span>개인정보보호 정책</label>
+																			</div>
+																	</div>
+																	<div id="collapseThree1" class="collapse" data-parent="#accordionExample1">
+																		<div class="card-body">개인정보보호 정책<br/>
+																			개인정보보호위원회가 취급하는 모든 개인정보는 관련 법령에 근거하여 수집 · 보유 및 처리되고 있습니다. 「개인정보보호법」은 이러한 개인정보의 취급에 대한 일반적 규범을 제시하고 있으며, 개인정보보호위원회는 이러한 법령의 규정에 따라 수집 · 보유 및 처리하는 개인정보를 공공업무의 적절한 수행과 이용자의 권익을 보호하기 위해 적법하고 적정하게 취급할 것입니다.<br/>
+																			또한, 개인정보보호위원회는 관련 법령에서 규정한 바에 따라 보유하고 있는 개인정보에 대한 열람, 정정·삭제, 처리정지 요구 등 이용자의 권익을 존중하며, 이용자는 이러한 법령상 권익의 침해 등에 대하여 행정심판법에서 정하는 바에 따라 행정심판을 청구할 수 있습니다.<br/>
+																			개인정보보호위원회는 개인정보보호법 제 30조에 따라 정보주체의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 개인정보 처리방침을 수립 · 공개하고 있습니다.</div>
+																	</div>
+																</div>
+																<div class="card">
+																	<div class="card-header">
+																		<div class="card-title collapsed" data-toggle="collapse" data-target="#collapseFour1">
+																			<label class="checkbox">
+																				<input type="checkbox" name="Checkboxes5">
+																				<span class="mr-1"></span>개인정보 수집이용</label>
+																			</div>
+																	</div>
+																	<div id="collapseFour1" class="collapse" data-parent="#accordionExample1">
+																		<div class="card-body">개인정보 수집이용<br/>
+																			개인정보보호위원회가 취급하는 모든 개인정보는 관련 법령에 근거하여 수집 · 보유 및 처리되고 있습니다. 「개인정보보호법」은 이러한 개인정보의 취급에 대한 일반적 규범을 제시하고 있으며, 개인정보보호위원회는 이러한 법령의 규정에 따라 수집 · 보유 및 처리하는 개인정보를 공공업무의 적절한 수행과 이용자의 권익을 보호하기 위해 적법하고 적정하게 취급할 것입니다.<br/>
+																			또한, 개인정보보호위원회는 관련 법령에서 규정한 바에 따라 보유하고 있는 개인정보에 대한 열람, 정정·삭제, 처리정지 요구 등 이용자의 권익을 존중하며, 이용자는 이러한 법령상 권익의 침해 등에 대하여 행정심판법에서 정하는 바에 따라 행정심판을 청구할 수 있습니다.<br/>
+																			개인정보보호위원회는 개인정보보호법 제 30조에 따라 정보주체의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 개인정보 처리방침을 수립 · 공개하고 있습니다.</div>
+																	</div>
+																</div>
+																<div class="card">
+																	<div class="card-header">
+																		<div class="d-flex p-4 bg-white align-items-center justify-content-between">
+																			<span>마케팅 정보 수신 동의</span>
+																			<div class="checkbox-inline">																	
+																				<label class="checkbox">
+																				<input type="checkbox" name="Checkboxes3">
+																				<span></span>이메일</label>
+																				<label class="checkbox">
+																				<input type="checkbox" checked="checked" name="Checkboxes3">
+																				<span></span>SNS</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="card">
+																	<div class="card-header">
+																		<div class="card-title collapsed" data-toggle="collapse" data-target="#collapseFive1"><span>개인정보 제3자 제공 및 위탁사항 이용약관</span></div>
+																	</div>
+																	<div id="collapseFive1" class="collapse" data-parent="#accordionExample1">
+																		<div class="card-body">개인정보 제3자 제공 및 위탁사항 이용약관<br/>
+																			개인정보 제3자 제공 및 위탁사항 이용약관가 취급하는 모든 개인정보는 관련 법령에 근거하여 수집 · 보유 및 처리되고 있습니다. 「개인정보보호법」은 이러한 개인정보의 취급에 대한 일반적 규범을 제시하고 있으며, 개인정보보호위원회는 이러한 법령의 규정에 따라 수집 · 보유 및 처리하는 개인정보를 공공업무의 적절한 수행과 이용자의 권익을 보호하기 위해 적법하고 적정하게 취급할 것입니다.<br/>
+																			또한, 개인정보보호위원회는 관련 법령에서 규정한 바에 따라 보유하고 있는 개인정보에 대한 열람, 정정·삭제, 처리정지 요구 등 이용자의 권익을 존중하며, 이용자는 이러한 법령상 권익의 침해 등에 대하여 행정심판법에서 정하는 바에 따라 행정심판을 청구할 수 있습니다.<br/>
+																			개인정보보호위원회는 개인정보보호법 제 30조에 따라 정보주체의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 개인정보 처리방침을 수립 · 공개하고 있습니다.</div>
+																	</div>
+																</div>
+																<div class="card">
+																	<div class="card-header">
+																		<div class="d-flex p-4 bg-white align-items-center justify-content-between">
+																			<span>정보 보유기간</span>
+																			<div class="radio-inline">																	
+																				<label class="radio">
+																				<input type="radio" name="radio3">
+																				<span></span>1년</label>
+																				<label class="radio">
+																				<input type="radio" checked="checked" name="radio3">
+																				<span></span>3년</label>
+																				<label class="radio">
+																					<input type="radio" checked="checked" name="radio3">
+																					<span></span>5년</label>
+																				<label class="radio">
+																					<input type="radio" checked="checked" name="radio3">
+																					<span></span>탈퇴시</label>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<!--end::Accordion-->
+															<!--begin::Wizard Actions-->
+															<div class="d-flex justify-content-center border-top mt-5 pt-10">
+																
+																<div>
+																	
+																	<button type="button" class="btn btn-primary font-weight-bolder font-weight-bolder btn-lg" data-wizard-type="action-next">회원가입 완료</button>
+																</div>
+															</div>
+															<!--end::Wizard Actions-->
+														</form>
+													</div>
+													<div class="tab-pane" id="tab_forms_widget_3" role="tabpanel" aria-labelledby="tab_forms_widget_3">
 														<form>
 															<div class="form-row">
 															  <div class="col-md-4 mb-3">
@@ -600,8 +1013,7 @@
 															</div>
 															<button class="btn btn-primary" type="submit">Submit form</button>
 														  </form>
-													</div>
-													<div class="tab-pane" id="tab_forms_widget_3" role="tabpanel" aria-labelledby="tab_forms_widget_3">기업 및 업체회원</div>													
+													</div>													
 												</div>	
 											
 												<!--end::Wizard Form-->
